@@ -1,8 +1,22 @@
 #!/usr/bin/env python3
 
-def admin_login(username, password):
-    # your code here
-    pass
+def admin_login(username, password): ###def is a keyword (kuonyesha start of a function)
+    ##then followed by a name of the function (parameters or arguments >>> this are placeholders for the values 
+    ##  : >>> is used to indicate the start of a function body 
+    ##Function body: The block of code that is executed when the function is called.
+    # # It is indented under the def statement.
+    if (username == "admin" or username == "ADMIN") and password == "12345":## the  bracket is used to group the
+        ## equality comparisons and  comparison and clarify the order of evaluation 
+        return "Access granted"
+    else:
+        return "Access denied" ##>>>> this returns is used to  specify the value that the function  should give 
+        ##  when the function is called
+ 
+print(admin_login("admin", "12345"))   
+print(admin_login("ADMIN", "12345"))    
+
+
+
 
 def hows_the_weather(temperature):
     # your code here
